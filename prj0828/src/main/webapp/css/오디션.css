@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+	margin: 0 auto;
+}
+
+nav{
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+button{
+	width: 300px;
+	height: 100px;
+	align-items: center;
+    margin-top: 250px;
+}
+#btn1{
+	background-color: red;
+	color: white;
+}
+
+#btn2{
+	background-color: blue;
+	color: white;
+}
+
+#btn3{
+	background-color: black;
+	color: white;
+}

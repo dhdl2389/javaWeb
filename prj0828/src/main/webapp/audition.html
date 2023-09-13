@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./css/메인.css" rel="stylesheet" />
+
+<script>
+	function check() {
+		//return false;
+		let frm = document.frm;
+		let userid = frm.userid;
+		let userpw = frm.userpw;
+
+		if (userid.value == "") {
+			alert("아이디 입력");
+			userid.focus();
+			return false;
+		}
+		if (userpw.value == "") {
+			alert("비밀번호 입력");
+			userpw.focus();
+			return false;
+		}
+		return true;
+	}
+</script>s
+s
+
+</head>
+<body>
+	<header> 오디션프로그램 </header>
+
+
+	<nav>
+
+		<form name="frm" action="오디션.jsp" method="post"
+			onsubmit="return check()">
+			<div>
+			<input class="a" type="text" name="userid"> <input class="a" type="text"
+				name="userpw">
+			<button>참가자 조회</button>
+			</div>
+		</form>
+
+	</nav>
+
+</body>
+</html>

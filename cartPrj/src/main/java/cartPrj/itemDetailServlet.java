@@ -1,0 +1,30 @@
+package cartPrj;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/itemDetail")
+public class itemDetailServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		// 상품정보가져오기
+		// 서비스, dao
+
+		String code = request.getParameter("code");
+		// 모델 심기
+		ItemService s = new ItemService();
+		String item = s.getItem(code);
+
+		request.setAttribute("item", item);
+		request.getRequestDispatcher("WEB-INF/views/itemDetail.jsp").forward(request, response);
+
+	}
+}
