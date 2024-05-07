@@ -85,8 +85,7 @@
 				<p>Microsoft To Do</p>
 				<span>To Do을(를) 통해 직장 생활과 여가 생활<br />에 모두 집중할 수 있습니다.
 				</span> <br />
-				<form name="frm" action="login.do
-" method="get"
+				<form name="frm" action="login.do" method="get"
 					onsubmit="return check()">
 					<button class="startBut">Start</button>
 				</form>

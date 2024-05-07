@@ -133,7 +133,7 @@
 	<div class="total">
 		<div class="img_header">
 			<img
-				src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANnGEFk9uMB555vn2AmBGsOpi4C25hLV5xSO8cMu_6g&s"
 				class="image-logo" alt="" />
 		</div>
 
